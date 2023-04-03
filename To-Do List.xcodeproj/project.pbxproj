@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		EE75203F29DB56B0001C9043 /* To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75203E29DB56B0001C9043 /* To_Do_ListApp.swift */; };
-		EE75204129DB56B0001C9043 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75204029DB56B0001C9043 /* ContentView.swift */; };
 		EE75204329DB56B3001C9043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE75204229DB56B3001C9043 /* Assets.xcassets */; };
 		EE75204629DB56B3001C9043 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE75204529DB56B3001C9043 /* Preview Assets.xcassets */; };
+		EE75205129DB57BA001C9043 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75205029DB57BA001C9043 /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EE75203B29DB56B0001C9043 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE75203E29DB56B0001C9043 /* To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListApp.swift; sourceTree = "<group>"; };
-		EE75204029DB56B0001C9043 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE75204229DB56B3001C9043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE75204529DB56B3001C9043 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE75205029DB57BA001C9043 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				EE75203E29DB56B0001C9043 /* To_Do_ListApp.swift */,
-				EE75204029DB56B0001C9043 /* ContentView.swift */,
+				EE75204F29DB57A2001C9043 /* Views */,
 				EE75204229DB56B3001C9043 /* Assets.xcassets */,
 				EE75204429DB56B3001C9043 /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				EE75204529DB56B3001C9043 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE75204F29DB57A2001C9043 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE75205029DB57BA001C9043 /* ListView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE75204129DB56B0001C9043 /* ContentView.swift in Sources */,
+				EE75205129DB57BA001C9043 /* ListView.swift in Sources */,
 				EE75203F29DB56B0001C9043 /* To_Do_ListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
