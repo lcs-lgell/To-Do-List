@@ -11,6 +11,7 @@
 		EE75204329DB56B3001C9043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE75204229DB56B3001C9043 /* Assets.xcassets */; };
 		EE75204629DB56B3001C9043 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE75204529DB56B3001C9043 /* Preview Assets.xcassets */; };
 		EE75205129DB57BA001C9043 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75205029DB57BA001C9043 /* ListView.swift */; };
+		EEA1331F29DB5C7E00110841 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA1331E29DB5C7E00110841 /* ToDoItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EE75204229DB56B3001C9043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE75204529DB56B3001C9043 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE75205029DB57BA001C9043 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		EEA1331E29DB5C7E00110841 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +73,17 @@
 			isa = PBXGroup;
 			children = (
 				EE75205029DB57BA001C9043 /* ListView.swift */,
+				EEA16EC229DB5BC800209F99 /* Model */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		EEA16EC229DB5BC800209F99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEA1331E29DB5C7E00110841 /* ToDoItem.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			files = (
 				EE75205129DB57BA001C9043 /* ListView.swift in Sources */,
 				EE75203F29DB56B0001C9043 /* To_Do_ListApp.swift in Sources */,
+				EEA1331F29DB5C7E00110841 /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
