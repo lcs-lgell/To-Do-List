@@ -10,13 +10,15 @@ import SwiftUI
 struct ListView: View {
     //MARK: Stored Properties
     
-    // the list of items to be completed
-    @BlackbirdLiveModels({ db in
-        try await TodoItem.read(from: db)
-    }) var todoItems
+    // access the connection to the dataas
+    @Environment(\.blackbirdDatabase) var db: Blackbird.Database?
+    
     
     // the item currently being added
     @State var newItemDescription: String = ""
+    
+    //The current search text
+    @State var searchText = ""
     
     //MARK: Computed Properties
     var body: some View {
@@ -31,19 +33,12 @@ struct ListView: View {
                     TextField("Enter a to-do item", text: $newItemDescription)
                     
                     Button(action: {
-//                    // get last todo item id
-//                        let lastId = todoItems.last!.id
-//
-//                    // create new todo item id
-//                        let newId = lastId + 1
-//
-//                    // creat the new todo Item
-//                        let newTodoItem = ToDoItem(id: newId, description: newItemDescription, completed: false)
-//                    // add the new todo item to the list
-//                        todoItems.append(newTodoItem)
-//
-//                    // Clear the input field
-//                        newItemDescription = ""
+                        Task {
+                         //write to database
+                            try await db!.transaction { core in
+                                try core.query("INSERT INTO TodoItem (description) VALUES(?)", newItemDescription)
+                            }
+                        }
                         
                     }, label: {
                         Text("ADD")
@@ -54,21 +49,9 @@ struct ListView: View {
                 }
                 .padding(20)
                 
-                List(todoItems.results) { currentItem in
-                    
-                    Label(title: {
-                        Text(currentItem.description)
-                    }, icon: {
-                        if currentItem.completed == true {
-                            Image(systemName: "checkmark.cricle")
-                        } else {
-                            Image(systemName: "circle")
-                        }
-                        
-                    })
-                    
-                    
-                }
+                ListItemsView(filteredOn: searchText)
+                .searchable(text: $searchText)
+                
                 
             }
             .navigationTitle("To do")
@@ -76,10 +59,13 @@ struct ListView: View {
         }
        
     }
+ 
 }
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         ListView()
+        //make the database available to all other views
+            .environment(\.blackbirdDatabase, AppDatabase.instance)
     }
 }

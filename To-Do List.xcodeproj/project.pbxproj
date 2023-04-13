@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE09EC6829E7108300EA2582 /* ListItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09EC6729E7108300EA2582 /* ListItemsView.swift */; };
+		EE526DCE29DDAA6E008E1D45 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EE526DCD29DDAA6E008E1D45 /* db.sqlite */; };
 		EE75203F29DB56B0001C9043 /* To_Do_ListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75203E29DB56B0001C9043 /* To_Do_ListApp.swift */; };
 		EE75204329DB56B3001C9043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE75204229DB56B3001C9043 /* Assets.xcassets */; };
 		EE75204629DB56B3001C9043 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE75204529DB56B3001C9043 /* Preview Assets.xcassets */; };
 		EE75205129DB57BA001C9043 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE75205029DB57BA001C9043 /* ListView.swift */; };
 		EEA1331F29DB5C7E00110841 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA1331E29DB5C7E00110841 /* TodoItem.swift */; };
-		EEF33A8929DB669F00C9C757 /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = EEF33A8829DB669F00C9C757 /* db.sqlite */; };
 		EEF33A8C29DB66F300C9C757 /* Blackbird in Frameworks */ = {isa = PBXBuildFile; productRef = EEF33A8B29DB66F300C9C757 /* Blackbird */; };
 		EEF33A8F29DB672600C9C757 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF33A8E29DB672600C9C757 /* AppDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE09EC6729E7108300EA2582 /* ListItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsView.swift; sourceTree = "<group>"; };
+		EE526DCD29DDAA6E008E1D45 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		EE75203B29DB56B0001C9043 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE75203E29DB56B0001C9043 /* To_Do_ListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = To_Do_ListApp.swift; sourceTree = "<group>"; };
 		EE75204229DB56B3001C9043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE75204529DB56B3001C9043 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE75205029DB57BA001C9043 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		EEA1331E29DB5C7E00110841 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		EEF33A8829DB669F00C9C757 /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
 		EEF33A8E29DB672600C9C757 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				EE75205029DB57BA001C9043 /* ListView.swift */,
+				EE09EC6729E7108300EA2582 /* ListItemsView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -88,7 +91,7 @@
 		EEA16EC229DB5BC800209F99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EEF33A8829DB669F00C9C757 /* db.sqlite */,
+				EE526DCD29DDAA6E008E1D45 /* db.sqlite */,
 				EEA1331E29DB5C7E00110841 /* TodoItem.swift */,
 			);
 			name = Model;
@@ -167,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE75204629DB56B3001C9043 /* Preview Assets.xcassets in Resources */,
-				EEF33A8929DB669F00C9C757 /* db.sqlite in Resources */,
+				EE526DCE29DDAA6E008E1D45 /* db.sqlite in Resources */,
 				EE75204329DB56B3001C9043 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,6 +182,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE09EC6829E7108300EA2582 /* ListItemsView.swift in Sources */,
 				EE75205129DB57BA001C9043 /* ListView.swift in Sources */,
 				EE75203F29DB56B0001C9043 /* To_Do_ListApp.swift in Sources */,
 				EEF33A8F29DB672600C9C757 /* AppDatabase.swift in Sources */,
